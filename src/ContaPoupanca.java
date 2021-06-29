@@ -15,7 +15,7 @@ public class ContaPoupanca extends Conta{
         int hoje = data.getDayOfMonth();
 
         if(hoje >= diaAniversarioConta) {
-            return this.saldo + this.taxaJuros * this.saldo;
+             this.saldo = this.saldo + this.taxaJuros * this.saldo;
         }
         return this.saldo;
     }
